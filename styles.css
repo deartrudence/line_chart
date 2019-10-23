@@ -1,0 +1,68 @@
+body {
+		font-family: 'Poppins', sans-serif;
+		background: #9AD1D4;
+		text-align: center;
+		color: #0D3A5C;
+	}
+	.line {
+		position: relative;
+	}
+
+	h1 {
+		/*color: white;*/
+		/*text-shadow: 1px 1px 2px rgba(0,0,0,0.2);*/
+	}
+	#chart {
+		background: white;
+		display: inline-block;
+		box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+		position: relative;
+	}
+
+	#tooltip {
+      position: absolute;
+      height: auto;
+      padding: 5px 10px;
+      background-color: #D1EAEB;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+      pointer-events: none;
+      transition: 0.2s;
+    }
+    #tooltip p {
+    	margin: 3px;
+    }
+    #tooltip.hidden {
+		  visibility: hidden;
+		  opacity: 0;
+		}
+
+	/* Need to remove the fill */
+	.line {
+	    fill: none;
+	    stroke: #ffab00;
+	    stroke-width: 3;
+	}
+	  
+	.overlay {
+	  fill: none;
+	  pointer-events: all;
+	}
+
+	/* Style the dots by assigning a fill and stroke */
+	.dot {
+	    fill: #ffab00;
+	    stroke: #fff;
+	}
+
+	.dot:hover {
+		fill: #D1EAEB;
+	}
+	  
+	  .focus circle {
+	  fill: none;
+	  stroke: steelblue;
+	}
+	text {
+		font-size: 14px;
+		font-family: 'Poppins', sans-serif;
+	}
